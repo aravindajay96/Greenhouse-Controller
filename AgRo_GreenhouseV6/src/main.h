@@ -14,10 +14,10 @@
 #include <ArduinoJson.h>
 
 // WiFi & Firebase Configuration
-#define WIFI_SSID "Redmi A3"
-#define WIFI_PASS "12445678"
-#define FIREBASE_HOST "https://agrogreenhouse0-38d6a-default-rtdb.asia-southeast1.firebasedatabase.app"  // Without "/"
-#define FIREBASE_SECRET "erxVUiPGn8XooEjUfoYzWYIoupd1u560sijnqJ2e"
+#define WIFI_SSID "******"
+#define WIFI_PASS "*******"
+#define FIREBASE_HOST "*********************************"  // Without "/"
+#define FIREBASE_SECRET "********************************"
 
 
 
@@ -34,6 +34,7 @@ void connectWiFi();
 void sendDataToFirebase(int year, int month, int day, int hour, int minute, int second, 
     float temperature, float humidity, float light);
 void processSDCard();
+
 
 
 #endif
