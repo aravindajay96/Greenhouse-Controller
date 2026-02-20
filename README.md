@@ -24,6 +24,7 @@ It provides:
 Designed for research, prototyping, and scalable smart farming systems.
 
 🧠 System Architecture
+  
   🔹 Core 0
 
       WiFi monitoring
@@ -46,54 +47,56 @@ Designed for research, prototyping, and scalable smart farming systems.
 
 This separation ensures stable real-time operation even during network instability.
 
+
 🛠 Hardware Components
 
-ESP32 Dev Module
-
-DHT11 Temperature & Humidity Sensor
-
-LDR Light Sensor
-
-DS3231 RTC Module
-
-16x2 I2C LCD
-
-Micro SD Card Module
-
-Relay Module
-
-Water Pump / Motor
-
-External Digital Trigger Sensor
+  ESP32 Dev Module
+  
+  DHT11 Temperature & Humidity Sensor
+  
+  LDR Light Sensor
+  
+  DS3231 RTC Module
+  
+  16x2 I2C LCD
+  
+  Micro SD Card Module
+  
+  Relay Module
+  
+  Water Pump / Motor
+  
+  External Digital Trigger Sensor
 
 🔌 Pin Configuration
-Function	GPIO
-Motor	2
-Fan	16
-Relay A	4
-Light Control	32
-DHT11	14
-LDR	36
-SD Card (CS)	5
-SensorC Input	13
+ Function	GPIO
+  Motor	2
+  Fan	16
+  Relay A	4
+  Light Control	32
+  DHT11	14
+  LDR	36
+  SD Card (CS)	5
+  SensorC Input	13
+  
 ⚙️ Key Features
-🌡 Environmental Monitoring
+  🌡 Environmental Monitoring
 
-Temperature & humidity (DHT11)
+    Temperature & humidity (DHT11)
+    
+    Light intensity mapped to percentage
+    
+    Real-time timestamp from DS3231
 
-Light intensity mapped to percentage
+  💾 Offline-First Logging
 
-Real-time timestamp from DS3231
+    Logs hourly to: /datalog.txt
 
-💾 Offline-First Logging
+  Ensures zero data loss during internet outages.
 
-Logs hourly to: /datalog.txt
+  ☁ Firebase Cloud Sync
 
-Ensures zero data loss during internet outages.
-
-☁ Firebase Cloud Sync
-
-When WiFi reconnects:
+  When WiFi reconnects:
 
 Reads stored data
 
