@@ -24,25 +24,25 @@ It provides:
 Designed for research, prototyping, and scalable smart farming systems.
 
 🧠 System Architecture
-🔹 Core 0
+  🔹 Core 0
 
-WiFi monitoring
+      WiFi monitoring
+      
+      Automatic reconnection
+      
+      SD-to-Firebase data synchronization
 
-Automatic reconnection
+  🔹 Core 1
 
-SD-to-Firebase data synchronization
-
-🔹 Core 1
-
-Sensor acquisition
-
-LCD updates
-
-Motor scheduling
-
-Data logging
-
-Lighting control
+      Sensor acquisition
+      
+      LCD updates
+      
+      Motor scheduling
+      
+      Data logging
+      
+      Lighting control
 
 This separation ensures stable real-time operation even during network instability.
 
