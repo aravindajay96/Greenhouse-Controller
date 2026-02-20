@@ -1,4 +1,4 @@
-🌱 🅰🅶🆁🅾 🅶🆁🅴🅴🅽🅷🅾🆄🆂🅴 🅲🅾🅽🆃🆁🅾🅻🅻🅴🆁 🆅5
+🌱 𝘼𝙜𝙍𝙤 𝙂𝙧𝙚𝙚𝙣𝙝𝙤𝙪𝙨𝙚 𝘾𝙤𝙣𝙩𝙧𝙤𝙡𝙡𝙚𝙧 𝙑5
 
   ESP32-Based Smart Greenhouse Monitoring & Control System
 
@@ -148,7 +148,7 @@ This separation ensures stable real-time operation even during network instabili
 
 💡 Scheduled Lighting
 
-  Automatically enabled between: 18:00 – 22:00
+    Automatically enabled between: 18:00 – 22:00
 
 🔐 Reliability Design
 
