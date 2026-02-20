@@ -1,29 +1,30 @@
 🌱 AgRo Greenhouse Controller V5
-ESP32-Based Smart Greenhouse Monitoring & Control System
+  ESP32-Based Smart Greenhouse Monitoring & Control System
 
-Reliable IoT greenhouse automation system with offline-first architecture and cloud synchronization.
+  Reliable IoT greenhouse automation system with offline-first architecture and cloud synchronization.
 
 📖 Overview
 
-AgRo Greenhouse V5 is a smart agriculture automation system built using an ESP32 dual-core microcontroller.
+  AgRo Greenhouse V5 is a smart agriculture automation system built using an ESP32 dual-core microcontroller.
 
-It provides:
+  It provides:
 
-🌡 Real-time environmental monitoring
+    🌡 Real-time environmental monitoring
+    
+    💧 Intelligent irrigation control
+    
+    💡 Scheduled lighting management
+    
+    💾 SD card offline data logging
+    
+    ☁ Automatic Firebase cloud synchronization
+    
+    🔄 Dual-core FreeRTOS task management
 
-💧 Intelligent irrigation control
+  Designed for research, prototyping, and scalable smart farming systems.
 
-💡 Scheduled lighting management
 
-💾 SD card offline data logging
-
-☁ Automatic Firebase cloud synchronization
-
-🔄 Dual-core FreeRTOS task management
-
-Designed for research, prototyping, and scalable smart farming systems.
-
-🧠 System Architecture
+  🧠 System Architecture
   
   🔹 Core 0
 
