@@ -2,6 +2,8 @@
   ESP32-Based Smart Greenhouse Monitoring & Control System
 
   Reliable IoT greenhouse automation system with offline-first architecture and cloud synchronization.
+  
+![Controller Hardware Prototype](Greenhouse_Controller_Prototype.jpg)
 
 📖 Overview
 
@@ -174,28 +176,28 @@ This separation ensures stable real-time operation even during network instabili
 
 📈 Future Improvements
 
-  Upgrade to DHT22 / BME280
-  
-  Add soil moisture sensing
-  
-  ESP32 Web Dashboard
-  
-  OTA firmware updates
-  
-  MQTT protocol integration
-  
-  Mobile monitoring app
+    Upgrade to DHT22 / BME280
+    
+    Add soil moisture sensing
+    
+    ESP32 Web Dashboard
+    
+    OTA firmware updates
+    
+    MQTT protocol integration
+    
+    Mobile monitoring app
 
 🎓 Educational Value
 
 This project demonstrates:
 
-  Dual-core FreeRTOS architecture
-  
-  Offline-first IoT system design
-  
-  Cloud data synchronization logic
-  
-  Embedded task scheduling
-  
-  Reliable agricultural automation
+    Dual-core FreeRTOS architecture
+    
+    Offline-first IoT system design
+    
+    Cloud data synchronization logic
+    
+    Embedded task scheduling
+    
+    Reliable agricultural automation
