@@ -140,3 +140,59 @@ Disabled between 21:00 – 07:00
 Automatically enabled:
 
 18:00 – 22:00
+
+🔐 Reliability Design
+
+Automatic WiFi reconnection
+
+SD fallback storage
+
+Non-blocking FreeRTOS tasks
+
+Controlled sending-only mode during cloud sync
+
+Power-loss safe RTC recovery
+
+📸 Hardware Assembly
+
+System enclosed in a mounted control unit including:
+
+LCD interface
+
+RTC module
+
+SD logging module
+
+Relay-controlled actuators
+
+ESP32 controller
+
+Designed for protected greenhouse deployment.
+
+📈 Future Improvements
+
+Upgrade to DHT22 / BME280
+
+Add soil moisture sensing
+
+ESP32 Web Dashboard
+
+OTA firmware updates
+
+MQTT protocol integration
+
+Mobile monitoring app
+
+🎓 Educational Value
+
+This project demonstrates:
+
+Dual-core FreeRTOS architecture
+
+Offline-first IoT system design
+
+Cloud data synchronization logic
+
+Embedded task scheduling
+
+Reliable agricultural automation
