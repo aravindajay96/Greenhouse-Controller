@@ -5,7 +5,7 @@ Reliable IoT greenhouse automation system with offline-first architecture and cl
 
 📖 Overview
 
-AgRo Greenhouse V0 is a smart agriculture automation system built using an ESP32 dual-core microcontroller.
+AgRo Greenhouse V5 is a smart agriculture automation system built using an ESP32 dual-core microcontroller.
 
 It provides:
 
@@ -24,8 +24,7 @@ It provides:
 Designed for research, prototyping, and scalable smart farming systems.
 
 🧠 System Architecture
-
-Core 0
+🔹 Core 0
 
 WiFi monitoring
 
@@ -33,7 +32,7 @@ Automatic reconnection
 
 SD-to-Firebase data synchronization
 
-Core 1
+🔹 Core 1
 
 Sensor acquisition
 
@@ -65,7 +64,7 @@ Relay Module
 
 Water Pump / Motor
 
-External digital trigger sensor
+External Digital Trigger Sensor
 
 🔌 Pin Configuration
 Function	GPIO
@@ -82,17 +81,15 @@ SensorC Input	13
 
 Temperature & humidity (DHT11)
 
-Light intensity mapped to %
+Light intensity mapped to percentage
 
 Real-time timestamp from DS3231
 
 💾 Offline-First Logging
 
-Logs hourly to:
+Logs hourly to: /datalog.txt
 
-/datalog.txt
-
-Ensures zero data loss during internet outages
+Ensures zero data loss during internet outages.
 
 ☁ Firebase Cloud Sync
 
@@ -106,17 +103,16 @@ Cleans processed entries
 
 Resumes normal operation
 
-Data format example:
-
+Example Data Format
 {
   "temperature": 28.4,
   "humidity": 74.1,
   "light": 63
 }
-
 Entry key format:
 
 YYYYMMDD_HHMMSS
+
 💧 Intelligent Irrigation Logic
 
 Runs every:
@@ -137,7 +133,7 @@ Disabled between 21:00 – 07:00
 
 💡 Scheduled Lighting
 
-Automatically enabled:
+Automatically enabled between:
 
 18:00 – 22:00
 
