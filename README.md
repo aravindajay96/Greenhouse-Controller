@@ -1,4 +1,5 @@
-🌱 AgRo Greenhouse Controller V5
+🌱 𝐀𝐠𝐑𝐨 𝐆𝐫𝐞𝐞𝐧𝐡𝐨𝐮𝐬𝐞 𝐂𝐨𝐧𝐭𝐫𝐨𝐥𝐥𝐞𝐫 𝐕𝟓
+
   ESP32-Based Smart Greenhouse Monitoring & Control System
 
   Reliable IoT greenhouse automation system with offline-first architecture and cloud synchronization.
@@ -114,12 +115,15 @@ This separation ensures stable real-time operation even during network instabili
 
   * Resumes normal operation
 
+
  Example Data Format
-    {
-      "temperature": 28.4,
-      "humidity": 74.1,
-      "light": 63
-    }
+ 
+      {
+        "temperature": 28.4,
+        "humidity": 74.1,
+        "light": 63
+      }
+    
  Entry key format:
 
     YYYYMMDD_HHMMSS
