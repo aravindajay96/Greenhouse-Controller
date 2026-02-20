@@ -49,38 +49,43 @@
 This separation ensures stable real-time operation even during network instability.
 
 
-🛠 Hardware Components
+  🛠 Hardware Components
 
-  ESP32 Dev Module
-  
-  DHT11 Temperature & Humidity Sensor
-  
-  LDR Light Sensor
-  
-  DS3231 RTC Module
-  
-  16x2 I2C LCD
-  
-  Micro SD Card Module
-  
-  Relay Module
-  
-  Water Pump / Motor
-  
-  External Digital Trigger Sensor
+    ESP32 Dev Module
+    
+    DHT11 Temperature & Humidity Sensor
+    
+    LDR Light Sensor
+    
+    DS3231 RTC Module
+    
+    16x2 I2C LCD
+    
+    Micro SD Card Module
+    
+    Relay Module
+    
+    External Digital Trigger Sensor
 
-🔌 Pin Configuration
- Function	GPIO
-  Motor	2
-  Fan	16
-  Relay A	4
-  Light Control	32
-  DHT11	14
-  LDR	36
-  SD Card (CS)	5
-  SensorC Input	13
+  🔌 Pin Configuration
+   Function	GPIO
+    Motor	2
+    
+    Fan	16
+    
+    Relay A4
+    
+    Light Control	32
+    
+    DHT11	14
+    
+    LDR	36
+    
+    SD Card (CS)	5
+    
+    SensorC Input	13
   
-⚙️ Key Features
+  ⚙️ Key Features
   🌡 Environmental Monitoring
 
     Temperature & humidity (DHT11)
@@ -99,100 +104,98 @@ This separation ensures stable real-time operation even during network instabili
 
   When WiFi reconnects:
 
-Reads stored data
+  * Reads stored data
 
-Uploads to Firebase using HTTP PUT
+  * Uploads to Firebase using HTTP PUT
 
-Cleans processed entries
+  * Cleans processed entries
 
-Resumes normal operation
+  * Resumes normal operation
 
-Example Data Format
-{
-  "temperature": 28.4,
-  "humidity": 74.1,
-  "light": 63
-}
-Entry key format:
+ Example Data Format
+    {
+      "temperature": 28.4,
+      "humidity": 74.1,
+      "light": 63
+    }
+ Entry key format:
 
-YYYYMMDD_HHMMSS
+    YYYYMMDD_HHMMSS
 
 💧 Intelligent Irrigation Logic
 
-Runs every:
+  Runs every:
+  
+    1 hour (default)
+    
+    2 hours (if external sensor active)
 
-1 hour (default)
+  Each cycle:
+  
+    30 seconds ON
+    
+    Additional runs at +5, +10, +15 minutes
 
-2 hours (if external sensor active)
+  Night safety lock:
 
-Each cycle:
-
-30 seconds ON
-
-Additional runs at +5, +10, +15 minutes
-
-Night safety lock:
-
-Disabled between 21:00 – 07:00
+    Disabled between 21:00 – 07:00
 
 💡 Scheduled Lighting
 
-Automatically enabled between:
-
-18:00 – 22:00
+  Automatically enabled between: 18:00 – 22:00
 
 🔐 Reliability Design
 
-Automatic WiFi reconnection
-
-SD fallback storage
-
-Non-blocking FreeRTOS tasks
-
-Controlled sending-only mode during cloud sync
-
-Power-loss safe RTC recovery
+    Automatic WiFi reconnection
+    
+    SD fallback storage
+    
+    Non-blocking FreeRTOS tasks
+    
+    Controlled sending-only mode during cloud sync
+    
+    Power-loss safe RTC recovery
 
 📸 Hardware Assembly
 
-System enclosed in a mounted control unit including:
-
-LCD interface
-
-RTC module
-
-SD logging module
-
-Relay-controlled actuators
-
-ESP32 controller
-
-Designed for protected greenhouse deployment.
+    System enclosed in a mounted control unit including:
+    
+    LCD interface
+    
+    RTC module
+    
+    SD logging module
+    
+    Relay-controlled actuators
+    
+    ESP32 controller
+    
+    Designed for protected greenhouse deployment.
 
 📈 Future Improvements
 
-Upgrade to DHT22 / BME280
-
-Add soil moisture sensing
-
-ESP32 Web Dashboard
-
-OTA firmware updates
-
-MQTT protocol integration
-
-Mobile monitoring app
+  Upgrade to DHT22 / BME280
+  
+  Add soil moisture sensing
+  
+  ESP32 Web Dashboard
+  
+  OTA firmware updates
+  
+  MQTT protocol integration
+  
+  Mobile monitoring app
 
 🎓 Educational Value
 
 This project demonstrates:
 
-Dual-core FreeRTOS architecture
-
-Offline-first IoT system design
-
-Cloud data synchronization logic
-
-Embedded task scheduling
-
-Reliable agricultural automation
+  Dual-core FreeRTOS architecture
+  
+  Offline-first IoT system design
+  
+  Cloud data synchronization logic
+  
+  Embedded task scheduling
+  
+  Reliable agricultural automation
