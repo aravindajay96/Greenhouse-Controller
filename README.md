@@ -5,7 +5,7 @@
   Reliable IoT greenhouse automation system with offline-first architecture and cloud synchronization.
   
 ![Controller Hardware Prototype](Greenhouse_Controller_Prototype.jpg)
-
+---
 📖 Overview
 
   AgRo Greenhouse V5 is a smart agriculture automation system built using an ESP32 dual-core microcontroller.
@@ -26,7 +26,7 @@
 
   Designed for research, prototyping, and scalable smart farming systems.
 
-
+---
   🧠 System Architecture
   
   🔹 Core 0
@@ -51,8 +51,8 @@
 
 This separation ensures stable real-time operation even during network instability.
 
-
-  🛠 Hardware Components
+---
+🛠 Hardware Components
 
     ESP32 Dev Module
     
@@ -69,7 +69,7 @@ This separation ensures stable real-time operation even during network instabili
     Relay Module
     
     External Digital Trigger Sensor
-
+---
   🔌 Pin Configuration
    Function	GPIO
     Motor	2
