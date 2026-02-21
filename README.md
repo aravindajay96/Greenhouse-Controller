@@ -1,12 +1,13 @@
-## 🌱 AgRo Greenhouse Controller V5
+### 🌱 AgRo Greenhouse Controller V5
 
   ESP32-Based Smart Greenhouse Monitoring & Control System
 
   Reliable IoT greenhouse automation system with offline-first architecture and cloud synchronization.
   
 ![Controller Hardware Prototype](Greenhouse_Controller_Prototype.jpg)
+
 ---
-📖 Overview
+# 📖 Overview
 
   AgRo Greenhouse V5 is a smart agriculture automation system built using an ESP32 dual-core microcontroller.
 
@@ -27,7 +28,7 @@
   Designed for research, prototyping, and scalable smart farming systems.
 
 ---
-  🧠 System Architecture
+# 🧠 System Architecture
   
   🔹 Core 0
 
@@ -52,7 +53,7 @@
 This separation ensures stable real-time operation even during network instability.
 
 ---
-🛠 Hardware Components
+# 🛠 Hardware Components
 
     ESP32 Dev Module
     
@@ -70,7 +71,7 @@ This separation ensures stable real-time operation even during network instabili
     
     External Digital Trigger Sensor
 ---
-  🔌 Pin Configuration
+# 🔌 Pin Configuration
    Function	GPIO
     Motor	2
     
@@ -87,8 +88,8 @@ This separation ensures stable real-time operation even during network instabili
     SD Card (CS)	5
     
     SensorC Input	13
-  
-  ⚙️ Key Features
+  ---
+  # ⚙️ Key Features
   🌡 Environmental Monitoring
 
     Temperature & humidity (DHT11)
@@ -149,8 +150,8 @@ This separation ensures stable real-time operation even during network instabili
 💡 Scheduled Lighting
 
     Automatically enabled between: 18:00 – 22:00
-
-🔐 Reliability Design
+---
+# 🔐 Reliability Design
 
     Automatic WiFi reconnection
     
@@ -161,8 +162,8 @@ This separation ensures stable real-time operation even during network instabili
     Controlled sending-only mode during cloud sync
     
     Power-loss safe RTC recovery
-
-📸 Hardware Assembly
+---
+# 📸 Hardware Assembly
 
     System enclosed in a mounted control unit including:
     
@@ -177,8 +178,8 @@ This separation ensures stable real-time operation even during network instabili
     ESP32 controller
     
     Designed for protected greenhouse deployment.
-
-📈 Future Improvements
+---
+# 📈 Future Improvements
 
     Upgrade to DHT22 / BME280
     
@@ -191,8 +192,8 @@ This separation ensures stable real-time operation even during network instabili
     MQTT protocol integration
     
     Mobile monitoring app
-
-🎓 Educational Value
+---
+# 🎓 Educational Value
 
 This project demonstrates:
 
